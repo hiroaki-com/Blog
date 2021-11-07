@@ -32,7 +32,9 @@
 //text-overflowの導入によりテキスト一行途中…としてデザイン崩れ解消  https://tech.recruit-mp.co.jp/front-end/tips-ellipsis/
 .padding-top-15 {
     padding-top: 15px;
-    background: #eee;
+}
+
+.title-text-overflow {
     overflow: hidden;
     p {
         overflow: hidden;

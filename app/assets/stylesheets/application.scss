@@ -18,10 +18,12 @@
  body {
     padding-top: 2rem; /* navの固定後かぶり防止のために全体を下げる作業 */
     height: 100%;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    color: rgba(247, 246, 243, 0.5);
+    background: radial-gradient(ellipse at bottom, #192635 0%, #090a0f 100%);
+    color: rgba(49, 51, 78, 0.5);
     font-size: 15px;
  }
+
+ 
 
  /* 以下、navberを上部に固定する作業 */
  .navbar {
@@ -29,9 +31,11 @@
  width: 100%;
  top: 0;
  z-index: 10000;
- background-color: black;
+ background-color: rgba(21, 34, 39, 0.959);
  opacity: 0.7;
  }
+
+ 
 
  /* 以下、おしゃれな背景デザインを採用　https://deshinon.com/2019/03/06/background-oshare-kopipe/   top: 2000px は削除した */
  /* 以下、 全ての”stars”に存在する"height"を０pxへ変更。nav上部に出現した空白を消すことに成功。 */

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
 <div class="container ">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navigation">
@@ -12,8 +12,8 @@
     <% else %>
         <a class="navbar-brand" href="/" style= 'font-size: 25px' >Anonymous Blog</a>
     <% end %>
-
   </div>
+
   <div class="collapse navbar-collapse" id="navigation">
     <% if user_signed_in? %>
      <p class="navbar-text navbar-right" style= 'font-size: 17px;'><%= link_to '新規作成', new_article_path %></p>
@@ -22,7 +22,7 @@
      <p class="navbar-text navbar-right" style= 'font-size: 17px;'><%= link_to 'ユーザー登録', new_user_registration_path %></p>
      <p class="navbar-text navbar-right" style= 'font-size: 17px;'><%= link_to 'ログイン', new_user_session_path %></p>
     <% end %>
-
   </div>
+  
 </div>
 </nav>
