@@ -29,8 +29,16 @@
     opacity: 0.8;
 }
 
+//text-overflowの導入によりテキスト一行途中…としてデザイン崩れ解消  https://tech.recruit-mp.co.jp/front-end/tips-ellipsis/
 .padding-top-15 {
     padding-top: 15px;
+    background: #eee;
+    overflow: hidden;
+    p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
 }
 
 .padding-bottom-15 {
