@@ -1,0 +1,40 @@
+<div class= "container" style= 'padding-bottom: 20px'> 
+
+ <h2 class= "text-center" >新規登録</h2>
+
+ <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="form-group">
+    <%= label_tag(:profile_name,'名前') %><br />
+    <%= text_field_tag 'profile[name]','', class: 'form-control',placeholder: "input your name" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :email, 'メールアドレス' %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control',placeholder: "input your email" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password, 'パスワード'%>
+    <% if @minimum_password_length %>
+    <em>( <%= @minimum_password_length %> 文字以上入力してください )</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password", class: 'form-control',placeholder: "input your password" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :password_confirmation, 'パスワードの確認' %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control',placeholder: "input again your password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "新規登録", class:  'btn btn-primary'%>
+  </div>
+ <% end %>
+  
+  <%# 下記、ログインボタンの表示であるが、登録画面で不要のため非表示  %>
+  <% render "devise/shared/links" %>
+
+</div>
+

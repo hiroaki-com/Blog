@@ -1,0 +1,19 @@
+<div class= "container discolor">
+  <div class = "col-sm-12 margin-top-2rem article-block padding-top-15 padding-bottom-20 margin-bottom-30 ">
+    <% if @article.image_id.present? %>
+      <%= image_tag attachment_url(@article, :image), class: 'article-image padding-top-15' %>  
+    <% else %>
+    <%= image_tag 'tvtou.JPG', class: 'article-image padding-top-15' %>   
+    <% end %>
+    <h3><%= @article.title %></h3>   
+     <div class= "padding-bottom-15" style= 'padding-top: 10px' >  
+      <p><%= simple_format @article.body %><p>     
+      <p class= "text-right" style= 'padding-top: 10px'  >
+       <%= @article.created_at.strftime('%Y/%m/%d') %>        
+      </p>
+     </div> 
+     <%= link_to '編集', edit_article_path(@article), class:  'btn btn-primary' ,style: 'margin-bottom: 20px; marigin-right: 10px' %>
+     <%= link_to '削除', article_path(@article), method: :delete, data: {confirm: '削除してもよろしいですか？'}, class:  'btn btn-danger' ,style: 'margin-bottom: 20px' %>
+  </div>    
+</div>
+
