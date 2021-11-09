@@ -18,5 +18,12 @@ module Blog
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # 省略　flashの日本語化
+    config.i18n.default_locale = :ja
+    # 日本時間化
+    config.time_zone = 'Tokyo'
+
   end
 end
+
