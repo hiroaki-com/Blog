@@ -21,8 +21,12 @@
   
 
   <div class= "row">
-    <%= link_to "新規作成", new_article_path, class: 'margin-top-2per btn btn-primary' ,style: 'margin: 2% 0% 2% 1%' %>
+    <%= link_to "新規作成", new_article_path, class: 'margin-top-2per btn btn-primary' ,style: 'margin: 5% 0% 2% 1%' %>
   </div>
+  <div class= "row">
+    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'margin-top-2per btn btn-danger' ,style: 'margin: 0% 0% 2% 1%' %>
+  </div> 
+  
  </div>
 
 

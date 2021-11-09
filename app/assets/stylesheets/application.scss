@@ -24,25 +24,6 @@
     font-size: 15px;
  }
 
- //notice,alert位置を変更。文字色はbodyの影響を受けている。padding-topについて、application.scssのbody操作に準ずる。
-.alert {
-  text-align: center;
-  font-size: 15px;
-  color:goldenrod;
-  margin: 0px;
-  padding: 0px; //初期にpadding：15px存在していたため削除
-  background-color: rgba(169, 169, 169, 0.39);
-  border: none;
-}
- 
-.notice {
-  text-align: center;
-  color:goldenrod;
-  font-size: 15px;
-  background-color: rgba(169, 169, 169, 0.473);
-  border: none;
-}
-
  .footerFixed{
   min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
   position: relative;/* ←相対位置 */
@@ -80,6 +61,15 @@
     opacity: 0.7;
  }
 
+ /* bootstrap のbug退治に重要なヒント
+ .navbar-toggle {
+  display: none;
+}
+ .collapse {
+  display: block;
+}
+
+ */
 
  /* 以下、おしゃれな背景デザインを採用　https://deshinon.com/2019/03/06/background-oshare-kopipe/   top: 2000px は削除した */
  /* 以下、 全ての”stars”に存在する"height"を０pxへ変更。nav上部に出現した空白を消すことに成功。 */
