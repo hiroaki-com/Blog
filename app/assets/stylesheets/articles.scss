@@ -80,13 +80,19 @@ a {
     text-align: center;
     font-size: 15px;
     color:goldenrod;
-    padding-top: 2rem;
+    margin: 0px;
+    padding: 0px; //初期にpadding：15px存在していたため削除
+    background-color: rgba(169, 169, 169, 0.39);
+    border: none;
 }
+   
 .notice {
     text-align: center;
     color:goldenrod;
-    padding-top: 4rem;
+    margin-top: 4rem;
     font-size: 15px;
+    background-color: rgba(169, 169, 169, 0.473);
+    border: none;
 }
  
 .article-list-image {
@@ -100,3 +106,4 @@ a {
 .margin-top-2rem {
     margin-top: 2rem;
 }
+
