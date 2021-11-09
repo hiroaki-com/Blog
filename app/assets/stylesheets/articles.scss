@@ -77,15 +77,16 @@ a {
 
 //notice,alert位置を変更。文字色はbodyの影響を受けている。padding-topについて、application.scssのbody操作に準ずる。
 .alert {
-    padding: 0px 10%  ;
-    font-family: 25px;
+    text-align: center;
+    font-size: 15px;
     color:goldenrod;
     padding-top: 2rem;
 }
 .notice {
-    padding: 0px 10%  ;
+    text-align: center;
     color:goldenrod;
     padding-top: 4rem;
+    font-size: 15px;
 }
  
 .article-list-image {
