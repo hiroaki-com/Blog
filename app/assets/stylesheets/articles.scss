@@ -47,8 +47,9 @@
     padding-bottom: 15px;
 }
 
-a {
-    color: #918b8b;
+//記事一覧の文字色のみ指定
+.articles a {
+    color: rgba(10, 10, 10, 0.651);
 }
 
 .article-image {
@@ -89,7 +90,7 @@ a {
 .notice {
     text-align: center;
     color:goldenrod;
-    margin-top: 4rem;
+    margin-top: 4.5rem;
     font-size: 15px;
     background-color: rgba(169, 169, 169, 0.473);
     border: none;
@@ -106,4 +107,5 @@ a {
 .margin-top-2rem {
     margin-top: 2rem;
 }
+
 
