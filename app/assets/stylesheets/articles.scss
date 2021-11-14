@@ -64,6 +64,13 @@
     color: rgba(10, 10, 10, 0.651);
 }
 
+// 一覧画面の写真について
+.article-list-image {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+}
+// 詳細画面の画像について
 .article-image {
     width: 100%;
     height: 350px;
@@ -110,12 +117,6 @@
     font-size: 15px;
     background-color: rgba(169, 169, 169, 0.473);
     border: none;
-}
- 
-.article-list-image {
-    height: 150px;
-    width: 100%;
-    object-fit: cover;
 }
 
 
