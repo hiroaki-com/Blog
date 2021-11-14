@@ -12,6 +12,7 @@
 }
 
 // indexの記事間ボックス間の余白を追加するために記述
+// index
 .margin-right-1per {
     margin-right: 1%;
 }
@@ -47,6 +48,12 @@
     padding-bottom: 15px;
 }
 
+// 記事一覧全体を中央寄せにしたい
+// 以下対応で一旦妥協
+.articles{
+    padding-left: 6rem;
+}
+
 //記事一覧の文字色のみ指定
 .articles a {
     color: rgba(10, 10, 10, 0.651);
@@ -58,6 +65,10 @@
     object-fit:cover;
 }
 
+//index-下部 button
+.index-new-btn {
+    text-align: center;
+}
 
 //画像投稿画像を作成する際に、カメラを画像の中心にFontAwesomeを活用。二重表示などの不具合があったので、Rails6用のダウンロードを実行し、改善。
 .relative {
