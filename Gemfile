@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 #youyubeの動画14:49で追加 https://qiita.com/tqkqt0/items/d9a3f3416c242ba48ba0
+# ↓ bootstrapを削除する作業　https://qiita.com/daiki-futami/items/ff6712e74b300d8e4689
+# ↓ 再び古いバージョンのbootstrap-sass 3.4.1　を導入し直した。
 gem 'bootstrap-sass'
 gem 'sass-rails'
 #ナビゲーションバーのスマホサイズ時にボタンの内容が反映されなかったことへの対処

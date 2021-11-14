@@ -11,44 +11,146 @@
  @import '@fortawesome/fontawesome-free/scss/v4-shims';
 
  
- /* 文字色（ログイン、登録画面）を変更した　※デフォルトで文字色が＃3333333になっていたことの原因が不明　 */
+ /* 文字色（ログイン、登録画面）を変更した  ※デフォルトで文字色が＃3333333になっていたことの原因が不明   */
  /* body,header,footer */
 
  body {
-    padding-top: 2rem; /* navの固定後かぶり防止のために全体を下げる作業 */
-    height: 100%;
-    background: radial-gradient(ellipse at bottom, #192635 0%, #090a0f 100%);
-    color: rgba(136, 138, 172, 0.863);
-    font-size: 15px;
+   padding-top: 2rem; /* navの固定後かぶり防止のために全体を下げる作業 */
+   height: 100%;
+   background: radial-gradient(ellipse at bottom, #192635 0%, #090a0f 100%);
+   color: #fff;
+   font-size: 15px;
  }
 
-/* 以下、navberを上部に固定する作業 */
-.navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    margin-bottom: 0px;
-    z-index: 10000;
-    background-color: rgba(21, 34, 39, 0.959);
-    opacity: 0.7;
+
+#header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px;
+/* 以下、headerを上部に固定する作業 */
+   position: fixed;
+   width: 100%;
+   top: 0;
+   margin-bottom: 0px;
+   z-index: 10000;
+   background-color: rgba(18, 18, 19, 0.308);
+   opacity: 0.7;
+   border-bottom: groove #fff;
 }
 
-/* bootstrap のbug退治に重要なヒント
-.navbar-toggle {
-display: none;
-}
-.collapse {
-display: block;
+
+#header .logo a{
+   font-size: 30px;
+   text-decoration: none;
+   font-weight: bolder; 
+   color: #fff;          /* ロゴの文字異色  */
+   font-family: cursive; 
+   padding: 5px 10px;
+   /* background-color: white;  ロゴの背景色  */
+   border-radius: 5px;
 }
 
-*/
+#header .logo a:hover {
+   color         : rgb(250, 246, 246);       
+   background    : #1a1919;  
+}
+
+#header #nav {
+   list-style: none;
+   margin: 0 60px 0 2px;
+}
+  
+#header #nav li {
+   width: 100px;
+   text-align: center;
+   background-color: #333;
+   display: inline-block;
+   border-radius: 5px;
+   margin-left: 5px;
+}
+  
+#header #nav li p {
+   text-decoration: none;
+   transition    : .3s;         /* なめらか変化 */
+   border        : 2px solid #333;    /* 枠の指定 */    
+   border-radius: 5px;
+   font-size: 17px;
+   margin: 0;
+   padding: 1px 0;
+   color: #fff;
+   a {   
+      display: block;
+   }
+}
+ 
+/* 以下、新規作成とログアウトボタンを変色するため */
+#header #nav li .new {
+   background-color: rgb(243, 240, 240);
+   a {
+      color: black;
+   }
+}
+#header #nav li .logout {
+   background-color: none;
+   a {
+      color: #fff;
+   }
+}
+
+/* 以下、新規登録とログインボタンを変色するため */
+#header #nav li .login {
+   background-color: rgb(243, 240, 240);
+   a {
+      color: black;
+   }
+}
+#header #nav li .regist {
+   background-color: none;
+   a {
+      color: #fff;
+   }
+}
+
+/* /app/assets/stylesheets/users.scss を参考にデザイン・hoverを設定 */
+/* 以下、新規作成とログアウトボタンを変色するため */
+#header #nav li .new:hover {
+   background    : black;  
+   border        : 2px solid #333;    /* 枠の指定 */    
+   a {
+      color: #fff;
+   }
+}
+#header #nav li .logout:hover {
+   background    : #ffffff;  
+   border        : 2px solid #333;    /* 枠の指定 */    
+   a {
+      color: black;
+   }
+}
+
+/* 以下、新規登録とログインボタンを変色するため */
+#header #nav li .login:hover {
+   background    : black;  
+   border        : 2px solid #333;    /* 枠の指定 */    
+   a {
+      color: #fff;
+   }
+}
+#header #nav li .regist:hover {
+   background    : #ffffff;  
+   border        : 2px solid #333;    /* 枠の指定 */    
+   a {
+      color: black;
+   }
+}
 
  .footerFixed{
-    min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
-    position: relative;/* ←相対位置 */
-    padding-bottom: 100px; /* ←フッターの高さを指定 */
-    box-sizing: border-box;
-    /* ↑ヘッダーやフッターを含むすべての要素の高さ＝min-height:100vhになるように指定 */
+   min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+   position: relative;/* ←相対位置 */
+   padding-bottom: 100px; /* ←フッターの高さを指定 */
+   box-sizing: border-box;
+   /* ↑ヘッダーやフッターを含むすべての要素の高さ＝min-height:100vhになるように指定 */
 }
 
 #footer {
@@ -68,7 +170,7 @@ display: block;
 }
 
  
- /* 以下、おしゃれな背景デザインを採用　https://deshinon.com/2019/03/06/background-oshare-kopipe/   top: 2000px は削除した */
+ /* 以下、おしゃれな背景デザインを採用  https://deshinon.com/2019/03/06/background-oshare-kopipe/   top: 2000px は削除した */
  /* 以下、 全ての”stars”に存在する"height"を０pxへ変更。nav上部に出現した空白を消すことに成功。 */
  /* */
  #stars {
@@ -130,9 +232,3 @@ display: block;
      transform: translateY(-1000px);
    }
  }
-
-/**/
-
-
-
- 

@@ -1,5 +1,5 @@
 <div class= "container" >
- <div class="row " > 
+ <div class="row articles" > 
    <% @articles.each do |article| %>
     <%= link_to article do %>
      <div class = "col-xs-5 col-sm-4 col-md-3 margin-top-2per margin-right-1per margin-left-1per article-block padding-top-15 ">
@@ -19,14 +19,5 @@
    <% end %>
   </div>
   
-
-  <div class= "row">
-    <%= link_to "新規作成", new_article_path, class: 'margin-top-2per btn btn-primary' ,style: 'margin: 5% 0% 2% 1%' %>
-  </div>
-  <div class= "row">
-    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'margin-top-2per btn btn-danger' ,style: 'margin: 0% 0% 2% 1%' %>
-  </div> 
-  
- </div>
 
 
