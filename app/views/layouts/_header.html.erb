@@ -1,9 +1,9 @@
 <div id="header">
   <div class="logo">
     <% if user_signed_in? %>
-        <a href="/" style= 'font-size: 25px' ><%= current_user.name %>’s Blog</a>
+        <a href="/" ><%= current_user.name %>’s Blog</a>
     <% else %>
-        <a href="/" style= 'font-size: 25px' >One's Blog</a>
+        <a href="/" >One's Blog</a>
     <% end %>
   </div>
   <div class="link"></div>

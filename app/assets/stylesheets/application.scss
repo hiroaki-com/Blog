@@ -41,7 +41,7 @@
 
 
 #header .logo a{
-   font-size: 30px;
+   font-size: 20px;
    text-decoration: none;
    font-weight: bolder; 
    color: #fff;          /* ロゴの文字異色  */
@@ -63,7 +63,6 @@
 }
   
 #header #nav li {
-   width: 90px;
    text-align: center;
    background-color: #333;
    display: inline-block;
@@ -76,7 +75,7 @@
    transition    : .3s;         /* なめらか変化 */
    border        : 2px solid #333;    /* 枠の指定 */    
    border-radius: 5px;
-   font-size: 17px;
+   font-size: 15px;
    margin: 0;
    padding: 1px 0;
    color: #fff;
@@ -88,12 +87,14 @@
 /* 以下、新規作成とログアウトボタンを変色するため */
 #header #nav li .new {
    background-color: rgb(243, 240, 240);
+   width: 90px;
    a {
       color: black;
    }
 }
 #header #nav li .logout {
    background-color: none;
+   width: 90px;
    a {
       color: #fff;
    }
@@ -102,12 +103,14 @@
 /* 以下、新規登録とログインボタンを変色するため */
 #header #nav li .login {
    background-color: rgb(243, 240, 240);
+   width: 80px;
    a {
       color: black;
    }
 }
 #header #nav li .regist {
    background-color: none;
+   width: 90px;
    a {
       color: #fff;
    }
