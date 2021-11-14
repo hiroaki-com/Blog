@@ -15,11 +15,7 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-//= ローディング実装中
-
-//= require rails-ujs
-//= require turbolinks
-//= require jquery
-//= require bootstrap
-//= require_tree .
+// 以下、turbolinks を無効化する際に使用するコード
+// document.addEventListener("turbolinks:load", function () {　
+// });
 
