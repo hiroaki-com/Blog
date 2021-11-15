@@ -44,8 +44,9 @@
 ---------------------------*/
 @media (max-width: 600px) {
    #header {
-   flex-direction: column;
-   padding-bottom: 0; /* スマホ時のみヘッダー下部削除 */
+      padding-bottom: 0; /* スマホ時のみヘッダー下部削除 */
+      flex-direction: column;
+      border-bottom: none;
    }
 
    .notice {
@@ -192,7 +193,6 @@
     bottom: 0;
     left: 0;
     height: 30px;
-    border-top: ridge;
    p {
     margin: 0;
     font-size: 12px;
