@@ -48,9 +48,14 @@
     padding-bottom: 15px;
 }
 
-// 投稿時間※影響元が不明
+//タイトルサイズ　影響範囲は一覧画面のみ
+.title {
+    font-size: 1.2vw;
+}
+
+// 投稿時間※影響元が不明 影響範囲は一覧と詳細両者
 .text-right {
-    font-size: 90%;
+    font-size: 1vw;
 }
 
 // 記事一覧全体を中央寄せにしたい
