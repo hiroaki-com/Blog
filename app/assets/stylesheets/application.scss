@@ -27,7 +27,7 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 15px;
+   padding: 15px 20px 15px 30px;
 /* 以下、headerを上部に固定する作業 */
    position: fixed;
    width: 100%;
@@ -36,7 +36,7 @@
    z-index: 10000;
    background-color: rgba(18, 18, 19, 0.308);
    opacity: 0.7;
-   border-bottom: groove #fff;
+   border-bottom: ridge #fff;
 }
 
 /*logo*/
@@ -49,7 +49,7 @@
    }
 
    .notice {
-      margin-top: 7.4rem;
+      margin-top: 8.1rem;
   }
 }
 /*----------------------モバイル版*/
@@ -60,20 +60,15 @@
    text-overflow: ellipsis;
    white-space: nowrap;
    border-radius: 5px;
+   border-bottom: groove #fff;
    a {
-   font-size: 20px;
+   font-size: 25px;
    text-decoration: none;
    font-weight: bolder; 
    color: #fff;          /* ロゴの文字異色  */
    font-family: cursive; 
    padding: 10px 10px 0;
    }
-}
-
-/* logo ログアウト時 */
-#header .logo #font-fixed a {
-   font-size: 20px;
-   margin: 5px 10px 0 10px;
 }
 
 #header .logo a:hover {
@@ -197,6 +192,7 @@
     bottom: 0;
     left: 0;
     height: 30px;
+    border-top: ridge;
    p {
     margin: 0;
     font-size: 12px;
