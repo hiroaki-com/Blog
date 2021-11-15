@@ -3,7 +3,9 @@
     <% if user_signed_in? %>
         <a href="/" ><%= current_user.name %>’s Blog</a>
     <% else %>
+      <div id=font-fixed>
         <a href="/" >One's Blog</a>
+      </div>
     <% end %>
   </div>
   <div class="link"></div>
