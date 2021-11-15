@@ -50,12 +50,17 @@
 
 //タイトルサイズ　影響範囲は一覧画面のみ
 .title {
-    font-size: 1.2vw;
+    font-size: 90%;
 }
 
-// 投稿時間※影響元が不明 影響範囲は一覧と詳細両者
-.text-right {
-    font-size: 1vw;
+// 投稿時間※影響元が不明→text-rightがどっかにある
+.time-font-show {
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+.time-font-index {
+    font-size: 70%;
 }
 
 // 記事一覧全体を中央寄せにしたい
