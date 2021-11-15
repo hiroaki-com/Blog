@@ -21,6 +21,10 @@
     margin-left: 1%;
 }
 
+// スマホサイズ時、ヘッダー２段になる分、下げ
+.row {
+    padding-top :15px;
+}
 
 // なんとなく、記事ブロックに透明度を追加。※透明度を高めると、記事全体が薄くなり微妙な感じになってしまう。
 // 記事ブロックの高さ上限を設定。（日付がはみ出てしまう現象が出現するがまあ問題なしとする）
@@ -123,7 +127,7 @@
 .notice {
     text-align: center;
     color:goldenrod;
-    margin-top: 5rem;
+    margin-top: 6.1rem;
     font-size: 15px;
     background-color: rgba(169, 169, 169, 0.473);
     border: none;
