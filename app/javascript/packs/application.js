@@ -15,7 +15,6 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-// 以下、turbolinks を無効化する際に使用するコード
-// document.addEventListener("turbolinks:load", function () {　
-// });
-
+// ローディング画面実装
+//=> javascript/packs/フォルダ名/xxx.jsを読み込む
+//import "./users/loading"
