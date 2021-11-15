@@ -24,6 +24,11 @@
      </div> 
      <%= link_to '編集', edit_article_path(@article), class:  'btn btn-primary' ,style: 'margin-bottom: 20px; marigin-right: 10px' %>
      <%= link_to '削除', article_path(@article), method: :delete, data: {confirm: '削除してもよろしいですか？'}, class:  'btn btn-danger' ,style: 'margin-bottom: 20px' %>
-  </div>    
+  </div>
+
+  <%= link_to '戻る', 'javascript:history.back()', data: {"turbolinks" => false} %>
+
 </div>
+
+
 

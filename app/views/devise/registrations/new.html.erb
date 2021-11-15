@@ -35,6 +35,9 @@
   
   <%# 下記、ログインボタンの表示であるが、登録画面で不要のため非表示  %>
   <% render "devise/shared/links" %>
+  
+  <%= link_to '戻る', 'javascript:history.back()', data: {"turbolinks" => false} %>
 
 </div>
+
 

@@ -44,7 +44,8 @@
 ---------------------------*/
 @media (max-width: 600px) {
    #header {
-      padding-bottom: 0; /* スマホ時のみヘッダー下部削除 */
+      padding: 15px 25px 0px 10px; /* スマホ時のみヘッダー下部削除、中心に調整 */
+       padding-bottom: 0; 
       flex-direction: column;
       border-bottom: none;
    }
