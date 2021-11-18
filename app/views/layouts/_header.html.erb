@@ -12,11 +12,19 @@
     <ul id="nav">
       <% if user_signed_in? %>
         <li>
-          <p class="new"><%= link_to '新規作成', new_article_path %></p>
-        </li>  
-         <li>
-          <p class="logout"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></p>          
-        </li>  
+          <p class="new hide-pc">
+            <%= link_to(new_article_path) do %>
+              <i class="fas fa-edit" title="記事の新規作成"></i>
+            <% end %>
+          </p>
+        </li>
+        <li>
+          <p class="logout hide-pc">
+            <%= link_to(destroy_user_session_path, method: :delete) do %>
+              <i class="fa fa-sign-out-alt icon" title="ログアウト"></i>
+            <% end %>
+          </p>
+        </li>
       <% else %>
         <li>
           <p class="login"><%= link_to 'ログイン', new_user_session_path %></p>
@@ -27,3 +35,4 @@
       <% end %>
     </ul>  
 </div>
+

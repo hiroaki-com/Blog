@@ -22,12 +22,11 @@
    font-size: 15px;
  }
 
-
 #header {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 15px 20px 15px 30px;
+   padding: 15px 40px 15px 50px;
 /* 以下、headerを上部に固定する作業 */
    position: fixed;
    width: 100%;
@@ -45,13 +44,13 @@
 @media (max-width: 600px) {
    #header {
       padding: 15px 25px 0px 10px; /* スマホ時のみヘッダー下部削除、中心に調整 */
-       padding-bottom: 0; 
+      padding-bottom: 0; 
       flex-direction: column;
       border-bottom: none;
    }
 
    .notice {
-      margin-top: 8.1rem;
+      margin-top: 8.4rem;  /* PC.ver: articles.scss */
   }
 }
 /*----------------------モバイル版*/
@@ -110,7 +109,10 @@
 /* 以下、新規作成とログアウトボタンを変色するため */
 #header #nav li .new {
    background-color: rgb(243, 240, 240);
-   width: 100px;
+   padding-left: 2px; /* for font-awsm */
+   width: 40px; /* for font-awsm */
+   height: 35px; /* for font-awsm */
+   font-size: 20px; /* for font-awsm */
    a {
       color: black;
       text-decoration:none;
@@ -118,7 +120,9 @@
 }
 #header #nav li .logout {
    background-color: none;
-   width: 100px;
+   width: 40px; /* for font-awsm */
+   height: 35px; /* for font-awsm */
+   font-size: 20px; /* for font-awsm */
    a {
       color: #fff;
       text-decoration:none;
@@ -203,8 +207,8 @@
 
  
  /* 以下、おしゃれな背景デザインを採用  https://deshinon.com/2019/03/06/background-oshare-kopipe/   top: 2000px は削除した */
- /* 以下、 全ての”stars”に存在する"height"を０pxへ変更。nav上部に出現した空白を消すことに成功。 */
- /* */
+ /* 以下、 全ての”stars”に存在する"height"を０pxへ変更。nav上部に出現した空白を消すため。 */
+ 
  #stars {
     width: 100px;
     height: 0px;
