@@ -11,14 +11,14 @@
 <div class= "container discolor">
   <div class = "col-sm-12 margin-top-2rem article-block padding-top-15 padding-bottom-20 margin-bottom-30 ">
     <% if @article.image_id.present? %>
-      <%= image_tag attachment_url(@article, :image), class: 'article-image padding-top-15' %>  
+      <%= image_tag attachment_url(@article, :image), class: 'article-image' %>  
     <% else %>
-    <%= image_tag 'tvtou.JPG', class: 'article-image padding-top-15' %>   
+    <%= image_tag 'tvtou.JPG', class: 'article-image' %>   
     <% end %>
     <h3><%= @article.title %></h3>   
-     <div class= "padding-bottom-15" style= 'padding-top: 10px' >  
+     <div class= "show-text" >  
       <p><%= simple_format @article.body %><p>     
-      <p class= "text-right time-font-show" style= 'padding-top: 10px'  >
+      <p class= "text-right time-font-show">
        <%= @article.created_at.strftime('%Y-%m-%d %H:%M') %>        
       </p>
      </div> 
