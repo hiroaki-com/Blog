@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+
+// "new.html.erb"、"show.html.erb"、"edit.html.erb" は基本構成共通
 // "new.html.erb"、"show.html.erb"、"edit.html.erb"の文字色を変更
 .discolor {
     color:rgba(20, 20, 21, 0.707);
@@ -48,7 +50,7 @@
       }
 }
 
-/*編集画面のテキストエリア*/
+/*　新規投稿・詳細画面（共通）のテキストエリア*/
 .text-block {
     padding-bottom: 15px;
 }
@@ -125,6 +127,7 @@ h3 {
     }
 }
 
+/* new-articleページの下限余白 */
 .margin-bottom-30 {
     margin-bottom: 30px;
 }
