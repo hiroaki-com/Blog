@@ -4,7 +4,7 @@
         <a href="/" ><%= current_user.name %>’s Blog</a>
     <% else %>
       <div id=font-fixed>
-        <a href="/" >One's Blog</a>
+        <a href="/">One's Blog</a>
       </div>
     <% end %>
   </div>
@@ -12,27 +12,40 @@
     <ul id="nav">
       <% if user_signed_in? %>
         <li>
-          <p class="new hide-pc">
+          <p class= "new">
             <%= link_to(new_article_path) do %>
               <i class="fas fa-edit" title="記事の新規作成"></i>
+              <span class= "font hide-sp">新規作成</span>
             <% end %>
           </p>
         </li>
         <li>
-          <p class="logout hide-pc">
+          <p class= "logout">
             <%= link_to(destroy_user_session_path, method: :delete) do %>
               <i class="fa fa-sign-out-alt icon" title="ログアウト"></i>
+              <span class= "font hide-sp">ログアウト</span>
             <% end %>
           </p>
         </li>
       <% else %>
         <li>
-          <p class="login"><%= link_to 'ログイン', new_user_session_path %></p>
+          <p class= "login">
+            <%= link_to(new_user_session_path) do %>
+              <i class="fa fa-sign-in-alt icon" title="ログイン"></i>
+              <span class= "font hide-sp">ログイン</span>
+            <% end %>
+          </p>
         </li>
         <li>
-          <p class="regist"><%= link_to 'ユーザ登録', new_user_registration_path %></p>
+          <p class= "regist">
+            <%= link_to(new_user_registration_path) do %>
+              <i class="fa fab fa-osi" title="新規登録"></i>
+              <span class= "font hide-sp">新規登録</span>
+            <% end %>
+          </p>                    
         </li>  
       <% end %>
     </ul>  
 </div>
+
 
