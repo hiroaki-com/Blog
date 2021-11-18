@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 
+
 // "new.html.erb"、"show.html.erb"、"edit.html.erb" は基本構成共通
 // "new.html.erb"、"show.html.erb"、"edit.html.erb"の文字色を変更
 .discolor {
@@ -84,6 +85,11 @@ h3 {
 .time-font-index {
     font-size: 70%;
 }
+
+/* 記事一覧ページに指定：左右にpaddingが存在 */
+.default-padding{
+    padding: 0;
+ }
 
 //記事一覧ページ　のタイトル
 .title {
