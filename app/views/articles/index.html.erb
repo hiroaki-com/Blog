@@ -19,8 +19,10 @@
    <% end %>
   </div>
   
-  <div class="centering">
+  <div class="bottom-btns">
     <p class="index-new-btn" ><%= link_to '新規作成' , new_article_path,class: 'btn btn-primary' ,style: 'margin: 40px 0 10px' %></p>
-    <p class="position"><%= link_to(root_path) do %><i class="fas fa-home icon fa-1x" title="Top"></i><% end %></p>
+    <p class="skip-top"><%= link_to(root_path) do %><i class="fas fa-home icon fa-1x" title="Top"></i><span class= "hide-sp"> Top</span><% end %></p>
   </div>
+
+  
 
