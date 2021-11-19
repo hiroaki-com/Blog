@@ -54,9 +54,6 @@
       display: none;
    }
 
-   .notice {
-      margin-top: 8.4rem;  /* PC.ver: articles.scss */
-   }
 }
 /*----------------------------------------------------------------モバイル版*/
 
@@ -67,6 +64,7 @@
    white-space: nowrap;
    border-radius: 5px;
    border-bottom: groove #fff;
+   margin-left: 5px;
    a {
    font-size: 25px;
    text-decoration: none;
@@ -83,7 +81,7 @@
 }
 /*-----------------logo----*/
 
-/* nav */ 
+/* nav-------------------- */ 
 #header #nav {
    list-style: none;
    margin: 10px;
@@ -103,7 +101,6 @@
    transition    : .3s;         /* なめらか変化 */
    border        : 2px solid #333;    /* 枠の指定 */    
    border-radius: 5px;
-   font-size: 17px;
    margin: 0;
    padding: 1px 0;
    color: #fff;
@@ -115,47 +112,75 @@
 /* pc------------------------------------------ */
 /* nav ( new logout login regist ) */
 @media (min-width: 701px) {
-   .new,.logout,.login,.regist {
+   .new, .login {
       background-color: rgb(243, 240, 240);
       padding-left: 2px; /* for font-awsm */
-      width: 120px; /* for font-awsm */
-      height: 35px; /* for font-awsm */
-      font-size: 20px; /* for font-awsm */
+      width: 110px; /* for font-awsm */
+      height: 37px; /* for font-awsm */
+      font-size: 15px; /*font-awsm サイズ*/
        a {
          color: black;
          text-decoration: none;
+         padding-top: 5px;
          .font {
-         font-size: 15px;
+         font-size: 15px; /* 文字サイズ */
          }
       }
    }
+
+   .logout, .regist {
+      background-color: rgb(41, 37, 37);
+      padding-left: 2px; /* for font-awsm */
+      width: 110px; /* for font-awsm */
+      height: 37px; /* for font-awsm */
+      font-size: 15px; /* font-awsm サイズ*/
+       a {
+         color: #fff;
+         text-decoration: none;
+         padding-top: 5px;
+         .font {
+         font-size: 15px; /* 文字サイズ */
+         }
+      }
+   }
+
+
 }
 /* ------------------------------------------pc */
 
 /* sp------------------------------------------ */
 /* nav ( new logout login regist ) */
 @media (max-width: 700px) {
-   .new,.logout,.login,.regist {
+   .new, .login {
       background-color: rgb(243, 240, 240);
       padding-left: 2px; /* for font-awsm */
       width: 45px; /* for font-awsm */
-      height: 35px; /* for font-awsm */
-      font-size: 20px; /* for font-awsm */
+      height: 37px; /* for font-awsm */
+      font-size: 20px; /* font-awsm サイズ　聴いてない*/
       a {
          color: black;
          text-decoration:none;
-         .font {
-            font-size: 15px;
-         }
       }
    }
+
+   .logout, .regist {
+      background-color: rgb(48, 40, 40);
+      padding-left: 2px; /* for font-awsm */
+      width: 45px; /* for font-awsm */
+      height: 37px; /* for font-awsm */
+      font-size: 20px; /* font-awsm サイズ　聴いてない*/
+      a {
+         color: #fff;
+         text-decoration:none;
+      }
+   }
+
+
 }
 /* sp------------------------------------------ */
 
-
-
-/* /app/assets/stylesheets/users.scss を参考にデザイン・hoverを設定 */
-/* 以下、新規作成とログアウトボタンを変色するため */
+/* ホバー--------------------------------------- */
+/* 新規投稿 ホバー */
 #header #nav li .new:hover {
    background    : black;  
    border        : 2px solid #333;    /* 枠の指定 */    
@@ -163,6 +188,7 @@
       color: #fff;
    }
 }
+/* ログアウト ホバー */
 #header #nav li .logout:hover {
    background    : #ffffff;  
    border        : 2px solid #333;    /* 枠の指定 */    
@@ -171,7 +197,7 @@
    }
 }
 
-/* 以下、新規登録とログインボタンを変色するため */
+/* ログイン ホバー */
 #header #nav li .login:hover {
    background    : black;  
    border        : 2px solid #333;    /* 枠の指定 */    
@@ -179,6 +205,7 @@
       color: #fff;
    }
 }
+/* 新規登録 ホバー */
 #header #nav li .regist:hover {
    background    : #ffffff;  
    border        : 2px solid #333;    /* 枠の指定 */    
@@ -186,7 +213,7 @@
       color: black;
    }
 }
-
+/* --------------------------------------- */
 
 /*--------------------------------------------------------------------------*/
  .footerFixed{

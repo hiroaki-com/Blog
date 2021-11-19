@@ -143,6 +143,7 @@ h3 {
     margin-bottom: 30px;
 }
 
+/* alert notice---------------------------------------------------- */
 //notice,alert位置を変更。文字色はbodyの影響を受けている。padding-topについて、application.scssのbody操作に準ずる。
 .alert {
     text-align: center;
@@ -157,12 +158,21 @@ h3 {
 .notice {
     text-align: center;
     color:goldenrod;
-    margin-top: 6.3rem;
+    margin-top: 6.7rem;
     font-size: 15px;
     background-color: rgba(169, 169, 169, 0.473);
     border: none;
 }
+/* ----------------------------------------------------alert notice */
 
+/*モバイル版
+--------------------------------------------------------------------------*/
+@media (max-width: 701px) { 
+    .notice {
+        margin-top: 9rem;  /* PC.ver: articles.scss */
+     }
+}
+/*----------------------------------------------------------------モバイル版*/
 
 //show.html.erb の上部空白,2remはapplication.scssの全体上部空白に合わせた。
 .margin-top-2rem {
