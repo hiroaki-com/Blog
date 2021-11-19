@@ -21,7 +21,7 @@
         </li>
         <li>
           <p class= "logout">
-            <%= link_to(destroy_user_session_path, method: :delete) do %>
+            <%= link_to(destroy_user_session_path, method: :delete, data: {confirm: "ログアウトしますか？"}) do %>
               <i class="fa fa-sign-out-alt icon" title="ログアウト"></i>
               <span class= "font hide-sp">ログアウト</span>
             <% end %>
