@@ -1,6 +1,6 @@
 <%- if controller_name != 'sessions' %>
-  <%= link_to "ログイン", new_session_path(resource_name), class: 'btn btn-success', style: 'margin-top: 20px' %><br />
-<% end %>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<%# ↑ 上記スタイルCSSが適応されない。原因もと不明　%>
+  <%= link_to "ログイン", new_session_path(resource_name), class: 'btn btn-success', style: 'margin-top: 10px'  %><br />
+<% end %>                                                                       <%# ↑ このスタイルの適応もと不明・反応しない　%>
 
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
   <%= link_to "新規登録", new_registration_path(resource_name), class: 'btn btn-primary', style: 'margin-top: 15px' %><br />
