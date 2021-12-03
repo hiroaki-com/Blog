@@ -98,8 +98,7 @@
   
 #header #nav li p {
    text-decoration: none;
-   transition    : .3s;         /* なめらか変化 */
-   border        : 2px solid #333;    /* 枠の指定 */    
+   transition    : .3s;         /* なめらか変化 */    
    border-radius: 5px;
    margin: 0;
    padding: 1px 0;
@@ -108,16 +107,36 @@
       display: block;
    }
 }
- 
+
+/* nav枠線色の場合分け (new logout login regist)-------------------- */
+#header #nav li .new {
+   border: 2px solid rgb(0, 183, 255);
+}
+
+#header #nav li .logout {
+   border: 2px solid rgb(255, 255, 255);
+}
+
+#header #nav li .login {
+   border: 2px solid rgb(18, 248, 2);
+}
+
+#header #nav li .regist {
+   border: 2px solid rgb(0, 183, 255);
+}
+/* ---------------------nav枠線色の場合分け (new logout login regist)*/
+
 /* pc------------------------------------------ */
 /* nav ( new logout login regist ) */
 @media (min-width: 701px) {
    .new, .login {
-      background-color: rgb(243, 240, 240);
+      background-color: #fff;
       padding-left: 2px; /* for font-awsm */
       width: 110px; /* for font-awsm */
       height: 37px; /* for font-awsm */
       font-size: 15px; /*font-awsm サイズ*/
+      
+      
        a {
          color: black;
          text-decoration: none;
@@ -134,6 +153,7 @@
       width: 110px; /* for font-awsm */
       height: 37px; /* for font-awsm */
       font-size: 15px; /* font-awsm サイズ*/
+      
        a {
          color: #fff;
          text-decoration: none;
@@ -152,10 +172,10 @@
 /* nav ( new logout login regist ) */
 @media (max-width: 700px) {
    .new, .login {
-      background-color: rgb(243, 240, 240);
+      background-color: #fff;
       padding-left: 2px; /* for font-awsm */
       width: 45px; /* for font-awsm */
-      height: 37px; /* for font-awsm */
+      height: 33px; /* for font-awsm */
       font-size: 20px; /* font-awsm サイズ　聴いてない*/
       a {
          color: black;
@@ -167,8 +187,9 @@
       background-color: rgb(48, 40, 40);
       padding-left: 2px; /* for font-awsm */
       width: 45px; /* for font-awsm */
-      height: 37px; /* for font-awsm */
+      height: 33px; /* for font-awsm */
       font-size: 20px; /* font-awsm サイズ　聴いてない*/
+      
       a {
          color: #fff;
          text-decoration:none;
