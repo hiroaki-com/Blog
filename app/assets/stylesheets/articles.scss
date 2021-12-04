@@ -71,11 +71,12 @@ h3 {
 .show-text {
     padding: 15px;
     line-height: 1.6;  /* 上下行間をいい感じに空ける処理 */
+    word-wrap: break-word; /* 長文英文字ではみ出さないように改行 */
 }
 
 // 詳細画面の画像について
 .article-image {
-    width: 100%;
+    width: 100%; 
     height: 350px;
     object-fit:cover;
     
