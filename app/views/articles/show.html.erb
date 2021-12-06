@@ -8,7 +8,7 @@
 </div>
 --%>
 
-<div class= "container discolor">
+<div class= "container discolor padding-none">
   <div class = "col-sm-12 margin-top-2rem article-block padding-top-15 padding-bottom-20 margin-bottom-30 ">
     <% if @article.image_id.present? %>
       <%= image_tag attachment_url(@article, :image), class: 'article-image' %>  
@@ -26,7 +26,7 @@
      <%= link_to '削除', article_path(@article), method: :delete, data: {confirm: '削除してもよろしいですか？'}, class:  'btn btn-danger' ,style: 'margin-bottom: 20px' %>
   </div>
 
-  <%= link_to '戻る', 'javascript:history.back()', data: {"turbolinks" => false} %>
+  <%= link_to '戻る', 'javascript:history.back()', data: {"turbolinks" => false}, class: 'link-padding'%>
 
 </div>
 
