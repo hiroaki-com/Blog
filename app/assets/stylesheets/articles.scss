@@ -172,12 +172,21 @@ h3 {
     .notice {
         margin-top: 9rem;  /* PC.ver: articles.scss */
      }
+
+    .link-padding {
+        padding-left: 20px; // 戻るボタンの左余白をスマホ時のみ拡大
+    }
 }
 /*----------------------------------------------------------------モバイル版*/
 
 //show.html.erb の上部空白,2remはapplication.scssの全体上部空白に合わせた。
 .margin-top-2rem {
     margin-top: 2rem;
+}
+
+//記事詳細ページの両横空白を削除
+.padding-none {
+    padding: 0;
 }
 
 /* 中央よせのため右余白追加 */
