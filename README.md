@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+macOS BigSur '11.6.1'
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+ruby '2.6.8'
+rails '6.1.4.1'
+postgres '1.2.3'
+  
+scss 
+bootstrap-sass (3.4.1)
+javascript
+  
+heroku
