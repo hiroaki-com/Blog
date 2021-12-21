@@ -40,6 +40,9 @@
     background-color: white;
     border: 1px solid #BBBBBB; 
     opacity: 0.8;
+    border-radius: 5px;
+    box-shadow: 5px 5px 0px 0 #337ab7;
+
 }
 
 //text-overflowの導入によりテキスト一行途中…としてデザイン崩れ解消  https://tech.recruit-mp.co.jp/front-end/tips-ellipsis/
