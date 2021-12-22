@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-before_action :authenticate_user!
+before_action :authenticate_user!   #各人に特化したブログのため、一覧画面を非ログイン時にも表示するのは頻雑になる
 before_action :find_article, only: [:show, :edit, :update, :destroy ]
 before_action :validate_user, only: [:show, :edit, :update, :destroy ]
 
