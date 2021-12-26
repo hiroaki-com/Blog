@@ -75,3 +75,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # adimin install
 gem 'rails_admin', '~> 2.0.0.beta'
+
+# 投稿のリンク飛べるようにする機能 https://freesworder.net/rails-link-a/
+gem 'rinku'
