@@ -3,7 +3,7 @@
 #### URL
 https://blog-rails-hk.herokuapp.com/users/sign_in
 
--> `ゲストユーザーボタン`よりご覧になれます
+-> `ゲストログイン`ボタンよりご覧になれます
 
 #### 活用技術
 
