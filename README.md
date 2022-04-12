@@ -1,9 +1,13 @@
-# README
+## シンプルな個人ブログ - Simple Private Blog -
 
-シンプルな個人ブログアプリ
+#### URL
+https://blog-rails-hk.herokuapp.com/users/sign_in
 
-macOS BigSur '11.6.1'
+-> `ゲストユーザーボタン`よりご覧になれます
 
+#### 活用技術
+
+```
 ruby '2.6.8'
 
 Ruby on rails '6.1.4.1'
@@ -15,5 +19,8 @@ scss
 bootstrap-sass (3.4.1)
 
 javascript
-  
+
+- responsive design supported
+
 heroku
+```
