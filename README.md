@@ -5,6 +5,11 @@ https://blog-rails-hk.herokuapp.com/users/sign_in
 
 -> `ゲストログイン`ボタンよりご覧になれます
 
+#### UI
+
+<img width="591" alt="スクリーンショット 2022-04-14 16 22 40" src="https://user-images.githubusercontent.com/92197575/163334984-4a8ffbe9-050a-4421-ba41-c97f31bc4b82.png">
+
+
 #### 活用技術
 
 ```
