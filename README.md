@@ -1,5 +1,7 @@
 ## シンプルな個人ブログ - Simple Private Blog -
 
+#### ※ 2022/12/04現在、Heroku無償枠終了に伴いサイト停止中
+
 #### URL
 https://blog-rails-hk.herokuapp.com/users/sign_in
 
